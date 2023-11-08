@@ -86,7 +86,7 @@
     left: 10px;
 }
 .sub-details .btn{
-    margin-top: 5em;
+    margin-top: 2em;
 }
 .movie-duration{
     display: flex;
@@ -188,6 +188,9 @@
     width: 15%;
     margin-top: 1em;
 }
+.book-btn .btn:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+} 
 .row-selection-reviews{
     
     width: 95%;
