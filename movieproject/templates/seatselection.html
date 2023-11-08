@@ -1,0 +1,269 @@
+{% extends 'layouts.html' %}
+{% block titleblock %}Movie Selection {% endblock %}
+
+{% block bodyblock %}
+<div class="container-selection-main">
+
+  <div class="row-selection-banner">
+    <div class="col-poster">
+      <img src="https://www.mixindia.com/wp-content/uploads/2020/01/Ajayante-Randam-Moshanam-Poster.jpg" alt="">
+      <i class="bi bi-play-circle"></i>
+       <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+      </svg>
+      </a>
+    </div> 
+    <div class="col-poster-detail">
+        <img src="https://images.ottplay.com/images/Ajayante_Randam_Moshanam_2020_movie_photo_1.jpg?impolicy=ottplay-20210210&width=1200&height=675" alt="">
+       <div class="sub-details">
+        <div class="title"> <h2>Ajayante Randam Moshanam </h2></div>
+        <div class="rating">
+          <i class="bi bi-star-fill"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg><p>.../10</p>
+        </div>
+        <div class="movie-type">
+          <button class="btn btn-primary">2D</button>
+          <button class="btn btn-primary">Malayalam</button>
+        </div>
+        <div class="movie-duration">
+          <p>2h 34m <div class="vertical-line"></div>Action<div class="vertical-line"></div>Adventure<div class="vertical-line"></div>Thriller
+            <div class="vertical-line"></div>UA<div class="vertical-line"></div>Comming Soon</p>
+        </div>
+       </div>
+      </div>
+  </div>
+  
+<!-------------------------------------------------seats------------------------------------------------------------------------------->
+<div class="screen"></div>
+<div class="scree-txt">S &nbsp;&nbsp;C&nbsp;&nbsp; R&nbsp;&nbsp; E &nbsp;&nbsp;E&nbsp;&nbsp; N</div>
+  <div class="row-selection-seat">
+    <div class="date-seatnumber">
+      <div class="seat-status-info">
+      <li style="background-color: rgb(170, 174, 168);"></li><p>Available</p>
+      <li style="background-color:orangered;"></li><p>Booked</p>
+      <li style="background-color: greenyellow"></li><p>Selected</p>
+    </div>
+    <div class="date-show"> 
+      <select  class="btn btn-primary" name="day" id="">
+        <option  style="background-color:rgb(73, 73, 223);" value="">Day</option>
+        <option style="background-color:rgb(89, 60, 190);" value="01">Today</option>
+        <option style="background-color:rgb(60, 60, 221);" value="02">Tomorrow</option>
+        </select>
+        <select class="btn btn-primary" name="month" id="">
+          <option value="">Shows</option>
+          <option value="">9Am</option>
+          <option value="">1Pm</option>
+          <option value="">5Pm</option>
+          <option value="">9.30Pm</option>
+        </select>
+        <select class="btn btn-primary" name="month" id="">
+          <option value="">Seats</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+        </select>
+     
+        
+  </div>
+
+    </div>
+    <div class="seats">
+      <div class="row-seat">
+        <span>A</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>A</span>
+      </div>
+      <div class="row-seat">
+        <span>B</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>B</span>
+      </div>
+      <div class="row-seat">
+        <span>C</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>C</span>
+      </div>
+      <div class="row-seat">
+        <span>D</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>D</span>
+      </div>
+      <div class="row-seat">
+        <span>E</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>E</span>
+      </div>
+      <div class="row-seat">
+        <span>F</span>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <li class="chair"></li>
+        <span>F</span>
+      </div>
+    </div>
+    
+    
+
+  </div>
+
+
+  <div class="row-selection-reviews">
+    <div class="calculation">
+      <div class="amount"></div>
+      <div class="book-btn"><button class="btn btn-warning">Book Now</button></div>
+    </div>
+    <div class="casting">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block" src="https://i.ytimg.com/vi/1_0qYYZaqrs/maxresdefault.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="https://m.media-amazon.com/images/M/MV5BYThiMzQ2MmItYTQ5ZC00N2VjLThmNWMtNzE2NjAxYmQ1MDVlXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_FMjpg_UX1000_.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="https://i.ytimg.com/vi/uOmgN6AXHPY/maxresdefault.jpg" alt="First slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+</div>
+{% endblock %}

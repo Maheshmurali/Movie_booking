@@ -1,0 +1,152 @@
+*{
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    scroll-behavior: smooth;
+ }
+
+ .container{
+    max-width: 1072px;
+    margin:0 auto;
+    text-align: center;
+    background-color: red;
+    margin: 0rem;
+    width: 100%;
+    display: flex;
+}
+@media(min-width:1440px){
+    .col-4{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.col-4{
+    display: flex;  
+}
+.col-4 svg{
+    display: flex;
+    margin-top: 1.5em;
+    margin-left: 3em;
+}
+.col-4 h3{
+    margin-top: 1.5em;
+    
+}
+.sub-title{
+    margin-top: 4.7em;
+    margin-left: -13.5em;
+    display: flex;
+}
+.col-8{
+    padding: 2em;
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    
+}
+.nav-bar{
+    justify-content: flex-end;
+}
+.btn{
+    display: flex;
+    margin-left: 1em;
+}
+
+.txtfield{
+    border-radius: 5em;
+    text-indent: 1em;
+    border: 1px solid orangered;
+}
+.nav-link{
+    margin-left: 1em;
+    
+}
+.dropdown-menu a:hover{
+    color: rgb(8, 0, 255)
+}
+/*=====================================header======================================================================*/
+
+
+/*=====================================footer======================================================================*/
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2em;
+}
+@media(min-width:1440px){
+    .container-footer{
+        flex-direction: row;
+    }
+
+}
+.row-footer1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-1u{
+    width:30%;
+    text-align: center;
+}
+.row-footer1 a{
+    text-decoration: none;
+    color: black;
+
+}
+    
+
+.col-2u{
+    width:30%;
+    text-align: center;
+}
+.col-3u{
+    width:30%;
+    text-align: center;
+}
+
+.container-footer2{
+    display: flex;
+
+}
+.row-footer2 a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+.row-footer2{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    color: black;
+}
+.container-footer3{
+    display: flex;
+
+}
+.row-footer3{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row-footer3 a{
+    color: black;
+}
+.row-footer3 a:hover{
+    color:rgb(19, 19, 152);
+    
+}
