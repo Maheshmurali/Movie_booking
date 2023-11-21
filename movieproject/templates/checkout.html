@@ -1,0 +1,68 @@
+{% extends 'layouts.html' %}
+{% block titleblock %}Payment {% endblock %}
+
+{% block bodyblock %}
+<div class="container-fluid">
+    <div class="col-8-payment">
+        <div class="mobile-email">
+            <div><p>Share Contact Details</p></div>
+            <div>
+                <input type="email" placeholder="Email">
+                <input type="tel" name="" id="" placeholder="+91">
+                <button class="btn-continue"><a href="">CONTINUE</a></button>
+            </div>
+        </div>
+        <div class="paymentoptions">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Payment Options
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 <a class="dropdown-item" href="#">WALLET</a>
+
+                  
+                  <a class="dropdown-item" href="#">U P I</a>
+
+
+                  <a class="dropdown-item" href="#">DEBIT/CREDIT CARDS</a>
+
+
+                  <a class="dropdown-item" href="#">NET BANKING</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="col-4-payment">
+        <div class="title-order"> O R D E R  S U M M A R Y </div>
+        <div class="detail-tkt">
+        <div class="tkt-summary">
+            <p>Movie Name</p>
+            <p>language</p>
+            <p>name</p>
+            <p>time and date</p>
+        </div>
+        <div class="tkt-number">
+            <p>number</p>
+        </div>
+    </div>
+    <hr>
+    <div class="total-price">
+        <div class="sub">
+            <div class="amount-title"><p>Sub-Tottal</p></div>
+            <div class="amount"><p>Rs 300</p></div>
+
+        </div>
+        <div class="fees">
+            <div class="amount-title"><p>+ Convenience fees</p></div>
+            <div class="amount">Rs 50</div>
+        </div>
+        <div class="payable">
+            <div class="amount-title"><p>Amount Payable</p></div>
+            <div class="amount"><p>Rs 350</p></div>
+        </div>
+    </div>
+    </div>
+   
+   
+</div>
+{% endblock %}

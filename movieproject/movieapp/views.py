@@ -33,3 +33,9 @@ def index(request):
 
 def selection(request):
     return render(request,'seatselection.html')
+
+def register(request):
+    return render(request,'register.html')
+
+def checkout(request):
+    return render(request,'checkout.html')

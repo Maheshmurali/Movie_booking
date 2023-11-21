@@ -1,11 +1,14 @@
+
 .container-card{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     margin: 2em;
     flex-wrap: wrap;
-    width: 100%;    
+    width: 90%;  
+    gap: 6em;
 }
+/*===========================================index page====================================================*/
 
 
 

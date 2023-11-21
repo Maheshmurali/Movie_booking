@@ -187,6 +187,7 @@
 .book-btn{
     width: 15%;
     margin-top: 1em;
+    text-decoration: none;
 }
 .book-btn .btn:hover{
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);

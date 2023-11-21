@@ -1,0 +1,86 @@
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 231, 231);
+    justify-content: space-evenly;
+}
+.col-8-payment{
+    border: 1px solid rgb(182, 182, 186);
+    width: 60%;
+    margin-top: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    backdrop-filter: blure 5px;
+    background-color: rgb(218, 215, 215);
+
+}
+.col-4-payment{
+    border: 1px solid rgb(182, 182, 186);
+    margin-top: 2em;
+    backdrop-filter: blure 5px;
+    border-radius: 1em;
+    background-color: rgb(218, 215, 215);
+    width: 35%;
+}
+.detail-tkt{
+    display: flex;
+    justify-content: space-between;
+}
+.title-order{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1em;
+}
+.tkt-summary{
+    padding-top: 3em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+   
+}
+.tkt-number{
+    padding-top: 5em;
+    padding-right: 1em;
+}
+.fees{
+    display: flex;
+    justify-content: space-between;
+}
+.payable{
+    background-color: blanchedalmond;
+    padding-top: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.paymentoptions{
+    margin-top: 2em;
+}
+.paymentoptions .btn{
+    width: 100%;
+}
+.mobile-email p{
+    background-color: #5c636a;
+    height: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 7px;
+}
+.mobile-email input{
+    margin-top: 1em;
+    justify-content: space-evenly;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 2.2em;
+}
+.btn-continue{
+    background-color: #ffca2c;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 40px;  
+}
+.btn-continue a{
+    text-decoration: none;
+    color: black;
+}
