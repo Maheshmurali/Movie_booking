@@ -80,27 +80,27 @@
     <div class="seats">
       <div class="row-seat">
         <span>A</span>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
-        <li class="chair"></li>
+        <li><button id="chair" class="chair" onclick="changeButtonColor()" value="2">1</button></li>
+        <li class="chair" onclick="getSeat()" value="2"></li>
+        <li class="chair" onclick="getSeat()" value="3"></li>
+        <li class="chair" onclick="getSeat()" value="4"></li>
+        <li class="chair" onclick="getSeat()" value="5"></li>
+        <li class="chair" onclick="getSeat()" value="6"></li>
+        <li class="chair" onclick="getSeat()" value="7"></li>
+        <li class="chair" onclick="getSeat()" value="8"></li>
+        <li class="chair" onclick="getSeat()" value="9"></li>
+        <li class="chair" onclick="getSeat()" value="10"></li>
+        <li class="chair" onclick="getSeat()" value="11"></li>
+        <li class="chair" onclick="getSeat()" value="12"></li>
+        <li class="chair" onclick="getSeat()" value="13"></li>
+        <li class="chair" onclick="getSeat()" value="14"></li>
+        <li class="chair" onclick="getSeat()" value="15"></li>
+        <li class="chair" onclick="getSeat()" value="16"></li>
+        <li class="chair" onclick="getSeat()" value="17"></li>
+        <li class="chair" onclick="getSeat()" value="18"></li>
+        <li class="chair" onclick="getSeat()" value="19"></li>
+        <li class="chair" onclick="getSeat()" value="20"></li>
+        <li class="chair" onclick="getSeat()" value="21"></li>
         <span>A</span>
       </div>
       <div class="row-seat">
@@ -266,4 +266,26 @@
   </div>
 
 </div>
+<script>
+  var buttonclicked = false;
+    function changeButtonColor() {
+    var button = document.getElementById("chair");
+    
+    if (!buttonclicked)
+    {
+
+      button.style.backgroundColor = "red";
+      var buttonValue = button.value;
+      var buttonclicked = !buttonclicked;
+    }
+    else
+    {
+      button.style.backgroundColor = "";
+      console.log("hello")
+    }
+    console.log("Button Value:", buttonValue);
+  }
+
+
+</script>
 {% endblock %}

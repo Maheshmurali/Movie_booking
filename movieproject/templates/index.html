@@ -5,14 +5,14 @@
 
  
   <div class="container-card">
-    {% for movie_one in movie_list %}
+    {% for movie_one in Movie_list %}
   <div class="col-loop">
    <div class="card" style="width:18rem;">
-    <img class="card-img-top" src="{{movie_one.img}}" alt="Card image cap">
+    <img class="card-img-top" src="{{movie_one.poster.url}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{movie_one.name}}</h5>
-      <p class="card-text">{{movie_one.summary}}</p>
-      <p class="card-text">{{movie_one.rating}}</p>
+      <h5 class="card-title">{{movie_one.movieName}}</h5>
+      <p class="card-text">{{movie_one.movieYear}}</p>
+      <p class="card-text">{{movie_one.movieSummary}}</p>
       <a href="{% url 'seatselection' %}" class="btn btn-primary">Book Now</a>
     </div>
   </div>

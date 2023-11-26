@@ -1,0 +1,24 @@
+{% extends 'layouts.html' %}
+{% block titleblock %}Register {% endblock %}
+
+{% block bodyblock %}
+
+<div class="container-login">
+
+    <div class="col-md-8">
+        <h3><u>LogIn</u></h3>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+        <div class="user-input ">
+            <input name="email_id" class="user-name" type="text" placeholder="UserId/Email">
+            <input name="password_input" class="pass" type="text" placeholder="Password">
+        </div>
+        <div class="options">
+            <div class="user-register"><p><a href="{%url 'register'%}">SignUp</a></p></div>
+            <div class="user-forget"><a href="">Forgotuser/password</a></div>
+       </div>
+       <div class="submit"><button class="btn btn-primary">LogIn</button></div>
+       </form>
+    </div>
+</div>
+{% endblock%}

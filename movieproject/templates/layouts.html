@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/seatselection.css' %}">
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="icon" href="https://p7.hiclipart.com/preview/936/587/822/youtube-video-editing-film-youtube.jpg" type="image/x-icon">
     <title> {% block titleblock %} {% endblock %}</title>
 </head>
@@ -52,7 +53,7 @@
                                 </div>
                               </li>
                            
-                        <li class="nav-items"><a class="nav-link" href="{%url 'register'%}">LOGIN/REGISTER</a></li>
+                        <li class="nav-items"><a class="nav-link" href="{%url 'login'%}">LOGIN/REGISTER</a></li>
                         <input class="txtfield " type="text" placeholder="SEARCH MOVIE ">
                         <button class="btn btn-primary"> Search</button>
 
