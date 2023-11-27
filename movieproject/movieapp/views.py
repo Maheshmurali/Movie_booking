@@ -8,7 +8,7 @@ def index(request):
 
 def selection(request,pk):
     get_movie = AddMovies.objects.get(pk=pk)
-    Movie_Names = AddMovies.objects.all()
+    Movie_Names = AddMovies.objects.get(pk=pk)
     print(Movie_Names)
     print(get_movie)
     return render(request,'seatselection.html',{'Movie_Names':Movie_Names})
