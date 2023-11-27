@@ -13,7 +13,7 @@
       <h5 class="card-title">{{movie_one.movieName}}</h5>
       <p class="card-text">{{movie_one.movieYear}}</p>
       <p class="card-text">{{movie_one.movieSummary}}</p>
-      <a href="{% url 'seatselection' %}" class="btn btn-primary">Book Now</a>
+      <a href="{% url 'seatselection' movie_one.id %}" class="btn btn-primary">Book Now</a>
     </div>
   </div>
   </div>

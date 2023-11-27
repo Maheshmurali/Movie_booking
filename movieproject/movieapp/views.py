@@ -6,9 +6,12 @@ def index(request):
     
     return render(request,'index.html',{'Movie_list':Movie_list})
 
-def selection(request):
-    
-    return render(request,'seatselection.html')
+def selection(request,pk):
+    get_movie = AddMovies.objects.get(pk=pk)
+    Movie_Names = AddMovies.objects.all()
+    print(Movie_Names)
+    print(get_movie)
+    return render(request,'seatselection.html',{'Movie_Names':Movie_Names})
 
 def register(request,):
     if request.POST:
