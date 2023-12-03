@@ -234,3 +234,17 @@
     height: 10em;
 
 }
+.moviedetails{
+    width: 100%;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 5em;
+    margin-right:5em;
+    text-align: center;
+  }
+  th{
+    width: 5%;
+  }
