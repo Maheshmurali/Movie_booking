@@ -170,6 +170,10 @@
     list-style: none;
     border-radius: .2em ;
     flex-wrap: wrap;
+
+}
+.chairselect{
+    background-color: greenyellow;
 }
 .chair:hover{
     cursor: pointer;
