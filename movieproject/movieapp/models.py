@@ -31,3 +31,11 @@ class AddMovies(models.Model):
     actor_img4 = models.ImageField(upload_to = 'images/',null = True)
     actor_Name4 = models.CharField(max_length = 50,default = 'Name')
 
+
+
+class Cartdetails(models.Model):
+    number = models.IntegerField(null=True)
+    seat = models.CharField(max_length=100)
+    amount = models.IntegerField(null=True)
+    updated_at = models.DateTimeField(auto_now=True)
+

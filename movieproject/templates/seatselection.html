@@ -253,12 +253,19 @@
       </tr>
     </table>
  </div>
+ <form  method="post" id="backendForm" enctype="multipart/form-data" action="">
+  {% csrf_token %}
+  <input style="visibility: hidden;" id="snumber" name="snumber" type="text">
+  <input style="visibility: hidden;" id="seatNumber" name="seatNumber" type="text">
+  <input id="tamount" name="tamount" type="text">
+  <button type="submit" class="btn btn-warning submit-btn" style="position: absolute;left: 67em; top: 75em;" id="amount">Book Now</button>
+  
+ </form>
 
   <div class="row-selection-reviews">
     <div class="calculation">
       <div class="amount"></div>
-      <div class="book-btn"><a style="text-decoration: none;" href="{% url 'checkout' Movie_Names.id %}">
-        <button class="btn btn-warning" id="amount">Book Now</button></a></div>
+      
     </div>
     <div class="casting">
       <div class = "actors"><img src="{{Movie_Names.actor_img1.url}}" alt=""></div>

@@ -2,6 +2,7 @@
 {% block titleblock %}Payment {% endblock %}
 
 {% block bodyblock %}
+
 <div class="container-fluid">
     <div class="col-8-payment">
         <div class="mobile-email">
@@ -36,33 +37,57 @@
         <div class="title-order"> O R D E R  S U M M A R Y </div>
         <div class="detail-tkt">
         <div class="tkt-summary">
-            <p>{{Check_out.movieName}}</p>
-            <p>{{Check_out.language}}</p>
-            <p>name</p>
-            <p>time and date</p>
+            <table style="display:flex; width: 27em;">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th style="height: 4em;">Movie Name</th>
+                    <th style="padding-left: 14em;">{{Check_out.movieName}}</th>
+                </tr>
+                <tr style="height: 4em;">
+                    <th >Number Of Seats</th>
+                    <th style="padding-left: 14em;">{{data.number}}</th>
+                </tr>
+                <tr style="height: 4em;">
+                    <th >Seats</th>
+                    <th style="padding-left: 14em;">{{data.seat}}</th>
+                </tr>
+                
+            </table>
         </div>
-        <div class="tkt-number">
-            <p>number</p>
-        </div>
+        
     </div>
     <hr>
-    <div class="total-price">
-        <div class="sub">
-            <div class="amount-title"><p>Sub-Tottal</p></div>
-            <div class="amount"><p>Rs 300</p></div>
-
-        </div>
-        <div class="fees">
-            <div class="amount-title"><p>+ Convenience fees</p></div>
-            <div class="amount">Rs 50</div>
-        </div>
-        <div class="payable">
-            <div class="amount-title"><p>Amount Payable</p></div>
-            <div class="amount"><p>Rs 350</p></div>
-        </div>
+    <div class="total-price" >
+        <table  style="display:flex; width: 27em; margin:1em;">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th style="height: 2em;">Tottal Amount</th>
+                <th style="padding-left: 16em;">{{data.amount}}</th>
+            </tr>
+            <tr style="height: 4em;">
+                <th style="height: 2em;">Other Charges</th>
+                <th style="padding-left: 16em;">00</th>
+            </tr>
+        
+        </table>
+        <hr>
+        <table class="tableorder" style="display:flex; width: 45em; margin:1em">
+            <tr style="height: 2em;">
+                <th style="font-size: larger;">Payable Amount</th>
+                <th style="padding-left: 14em; height: 2em;">{{data.amount}}</th>
+            </tr>
+            
+        </table>
     </div>
     </div>
    
    
 </div>
+
 {% endblock %}
