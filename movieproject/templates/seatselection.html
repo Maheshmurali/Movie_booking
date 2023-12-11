@@ -53,31 +53,19 @@
       <li style="background-color: greenyellow"></li><p>Selected</p>
     </div>
     <div class="date-show"> 
-      <select  class="btn btn-primary" name="day" id="">
-        <option  style="background-color:rgb(73, 73, 223);" value="">Day</option>
-        <option style="background-color:rgb(89, 60, 190);" value="01">Today</option>
-        <option style="background-color:rgb(60, 60, 221);" value="02">Tomorrow</option>
+      <select aria-required="true" class="btn btn-primary" name="day" id="getDay">
+        <option value="">Day</option>
+        <option value="Today" aria-required="true">Today</option>
+        <option value="Tomorrow" aria-required="true">Tomorrow</option>
         </select>
-        <select class="btn btn-primary" name="month" id="">
+        <select aria-required="true" class="btn btn-primary" name="month" id="getShow">
           <option value="">Shows</option>
-          <option value="">9Am</option>
-          <option value="">1Pm</option>
-          <option value="">5Pm</option>
-          <option value="">9.30Pm</option>
+          <option value="9AM">9AM</option>
+          <option value="1PM">1PM</option>
+          <option value="5PM">5PM</option>
+          <option value="9.30PM">9.30PM</option>
         </select>
-        <select class="btn btn-primary" name="month" id="">
-          <option value="">Seats</option>
-          <option value="01">01</option>
-          <option value="02">02</option>
-          <option value="03">03</option>
-          <option value="04">04</option>
-          <option value="05">05</option>
-          <option value="06">06</option>
-          <option value="07">07</option>
-          <option value="08">08</option>
-          <option value="09">09</option>
-          <option value="10">10</option>
-        </select>
+ 
      
         
   </div>
@@ -257,7 +245,9 @@
   {% csrf_token %}
   <input style="visibility: hidden;" id="snumber" name="snumber" type="text">
   <input style="visibility: hidden;" id="seatNumber" name="seatNumber" type="text">
-  <input id="tamount" name="tamount" type="text">
+  <input style="visibility: hidden;" id="tamount" name="tamount" type="text">
+  <input style="visibility: hidden;" id="showday" name="day" type="text">
+  <input style="visibility: hidden;" id="showtime" name="show" type="text">
   <button type="submit" class="btn btn-warning submit-btn" style="position: absolute;left: 67em; top: 75em;" id="amount">Book Now</button>
   
  </form>

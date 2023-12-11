@@ -12,6 +12,11 @@ urlpatterns = [
     path('register/',views.register,name='register'),
     path('checkout/<pk>',views.checkout,name='checkout'),
     path('login/',views.login,name='login'),
-    
+    path('malayalam/',views.malayalam,name='Malayalam'),
+    path('tamil/',views.tamil,name='Tamil'),
+    path('hindi/',views.hindi,name='Hindi'),
+    path('english/',views.english,name='English'),
+    path('kerala/',views.kerala,name='kerala'),
+    path('tamilnadu/',views.tamilnadu,name='tamilnadu'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

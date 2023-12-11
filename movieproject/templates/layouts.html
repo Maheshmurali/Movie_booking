@@ -37,9 +37,9 @@
                              Locations
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Kerala</a>
-                              <a class="dropdown-item" href="#">TamillNadu</a>
-                              <a class="dropdown-item" href="#">Karnataka</a>
+                              <a class="dropdown-item" href="{%url 'kerala' %}">Kerala</a>
+                              <a class="dropdown-item" href="{%url 'tamilnadu' %}">TamilNadu</a>
+                              
                             </div>
                           </li>
                             <li class="nav-item dropdown">
@@ -47,16 +47,19 @@
                                   Languages
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Malayalam</a>
-                                  <a class="dropdown-item" href="#">Hindi</a>
-                                  <a class="dropdown-item" href="#">English</a>
+                                  <a class="dropdown-item" href="{%url 'Malayalam'%}">Malayalam</a>
+                                  <a class="dropdown-item" href="{%url 'Tamil'%}">Tamil</a>
+                                  <a class="dropdown-item" href="{%url 'Hindi'%}">Hindi</a>
+                                  <a class="dropdown-item" href="{%url 'English'%}">English</a>
                                 </div>
                               </li>
                            
                         <li class="nav-items"><a class="nav-link" href="{%url 'login'%}">LOGIN/REGISTER</a></li>
-                        <input class="txtfield " type="text" placeholder="SEARCH MOVIE ">
+                        <form action="" method="post" enctype="multipart/form-data">
+                          {% csrf_token %}
+                        <input class="txtfield " type="text" name="search" placeholder="SEARCH MOVIE ">
                         <button class="btn btn-primary"> Search</button>
-
+                      </form>
                     </ul>
                 </nav>
 

@@ -24,13 +24,17 @@ for (let index = 0; index < document.querySelectorAll(".chair").length; index++)
         seatNumber.value = id;
         amount.value = numberOfSeat*250;
        
+        var day = document.querySelector("#showday");
+        var time = document.querySelector("#showtime");
+        day.value = document.querySelector("#getDay").value;
+        time.value = document.querySelector("#getShow").value;
     });
  
-    
+   
 }
 
 
-
+       
 
 
 

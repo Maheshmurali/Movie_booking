@@ -37,5 +37,8 @@ class Cartdetails(models.Model):
     number = models.IntegerField(null=True)
     seat = models.CharField(max_length=100)
     amount = models.IntegerField(null=True)
+    show = models.CharField(max_length=20,default="show")
+    day = models.CharField(max_length=20,default="day")
     updated_at = models.DateTimeField(auto_now=True)
+    
 
