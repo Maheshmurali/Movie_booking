@@ -31,9 +31,18 @@
                   <label class="form-check-label" for="exampleCheck1">I agree to the<a href=""> Terms & conditions & Privacy Policy</a></label>
                 </div>
                 <button type="submit" class="btn-register btn-primary">Register</button>
+                {% if user %}
+                  <p>user successfully created</p>
+
+                {% endif %}
+                {% if error_message %}
+                <p>{{error_message}}</p>
+                
+              {% endif %}
               </form>
         </div>
 
     </div>
 </div>
+
 {% endblock %}

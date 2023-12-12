@@ -53,12 +53,21 @@
                                   <a class="dropdown-item" href="{%url 'English'%}">English</a>
                                 </div>
                               </li>
-                           
-                        <li class="nav-items"><a class="nav-link" href="{%url 'login'%}">LOGIN/REGISTER</a></li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  User
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="{%url 'login'%}">LogIn</a>
+                                  <a class="dropdown-item" href="{%url 'register'%}">New User</a>
+                                  <a class="dropdown-item" href="{%url 'logout'%}">LogOut</a>
+                                </div>
+                              </li> 
+                              
                         <form action="" method="post" enctype="multipart/form-data">
                           {% csrf_token %}
-                        <input class="txtfield " type="text" name="search" placeholder="SEARCH MOVIE ">
-                        <button class="btn btn-primary"> Search</button>
+                        <input style="margin-top: 5.5px;" class="txtfield " type="text" name="search" placeholder="SEARCH MOVIE ">
+                        <button class="searchbtn btn btn-primary"> Search</button>
                       </form>
                     </ul>
                 </nav>

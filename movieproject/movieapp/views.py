@@ -31,19 +31,7 @@ def selection(request,pk):
         return redirect(f'/checkout/{p_k}',Cartdetails)
     return render(request,'seatselection.html',{'Movie_Names':Movie_Names})
 
-    
-
-
-def register(request,):
-    if request.POST:
-        name = (request.POST.get('fullname'))
-        email = (request.POST.get('email'))
-        password = (request.POST.get('password'))
-        conpassword = (request.POST.get('con_password'))
-        user = UserDetails(fullname=name,email=email,password=password,con_password=conpassword)
-        user.save()
-
-    return render(request,'register.html')
+   
 
 def checkout(request,pk):
     Check_out = AddMovies.objects.get(pk=pk)
@@ -51,10 +39,8 @@ def checkout(request,pk):
     lastUpdate_pk = lastUpdate.pk
     data = Cartdetails.objects.get(pk=lastUpdate_pk)
     return render(request,'checkout.html',{'Check_out':Check_out,'data':data})
-    data.delete()
-def login(request):
     
-    return render(request,'login.html')
+
 def malayalam(request):
     Movie_list= AddMovies.objects.filter(language='Malayalam')
     return render(request,'index.html',{'Movie_list':Movie_list})
